@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Signup Form with Validation</title> 
+</head> 
+<body> 
+<h2>Signup Form</h2> 
+<form> 
+  <label for="name">Full Name:</label><br> 
+  <input type="text" id="name" required placeholder="Enter your 
+name"><br><br> 
+  <!-- Email --> 
+  <label for="email">Email:</label><br> 
+  <input type="email" id="email" required placeholder="Enter your 
+email"><br><br> 
+  <!-- Password --> 
+  <label for="password">Password (6–12 characters):</label><br> 
+  <input type="password" id="password" minlength="6" maxlength="12" 
+required placeholder="Enter password"><br><br> 
+  <!-- Age --> 
+  <label for="age">Age (18–60):</label><br> 
+  <input type="number" id="age" min="18" max="60" required><br><br> 
+  <!-- Date of Birth --> 
+  <label for="dob">Date of Birth:</label><br> 
+  <input type="date" id="dob" required><br><br> 
+  <!-- Phone --> 
+  <label for="phone">Phone Number (10 digits):</label><br> 
+  <input type="number" id="phone" pattern="[0-9]{10}" required 
+placeholder="1234567890"><br><br> 
+  <!-- Gender --> 
+  <p>Gender:</p> 
+  <input type="radio" name="gender" value="male" required> Male 
+ 
+SLMT Ultimate JS | 17  
+ 
+  <input type="radio" name="gender" value="female"> Female 
+  <input type="radio" name="gender" value="other"> Other <br><br> 
+  <!-- Hobbies --> 
+  <p>Hobbies:</p> 
+  <input type="checkbox" name="hobby" value="reading"> Reading 
+  <input type="checkbox" name="hobby" value="music"> Music 
+  <input type="checkbox" name="hobby" value="sports"> Sports <br><br> 
+  <!-- Submit --> 
+  <button type="submit">Submit</button> 
+</form> 
+</body> 
+</html>
